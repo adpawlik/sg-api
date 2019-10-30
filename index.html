@@ -9,7 +9,22 @@
     <title>Api of polluted cities</title>
 </head>
 <body>
-
+    <div class="container">
+        <form action="" class="form">
+            <label for="country" class="form__label">Choose a country.</label>
+            <input id="country" list="countries" class="form__text" autocomplete="off" />
+            <datalist id="countries">
+              <option value="Poland"></option>
+              <option value="Germany"></option>
+              <option value="Spain"></option>
+              <option value="France"></option>
+            </datalist>
+            <button type="submit" class="form__submit">Check</button>
+        </form>
+        <div class="loader"></div>
+        <div id="results">
+        </div>
+    </div>
     <script src="assets/js/scripts-bundled.js"></script>
 </body>
 </html>
