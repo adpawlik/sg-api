@@ -154,14 +154,17 @@ body {
     animation-delay: -0.16s;
     display: none;
 
-    &::before, &::after {
-        position: absolute;
-        top: 0;
-        content: '';
+    &::before, &::after, & {
         background: rgba(224,224,224,.4);
         animation: load1 1s infinite ease-in-out;
         width: 1em;
         height: 4em;
+    }
+
+    &::before, &::after {
+        position: absolute;
+        top: 0;
+        content: '';
     }
 
     &::before {
