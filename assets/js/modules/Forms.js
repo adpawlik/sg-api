@@ -59,7 +59,6 @@ class Forms{
     
     resultsCollapse(e){
         const target = $(e.target);
-        console.log(target);
         target.parent().toggleClass("active");
         target.next(".results__body").slideToggle(300,"linear");
     }
